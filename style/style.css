@@ -29,7 +29,6 @@ button:hover {
 }
 
 /*** NAVBAR SECTION ***/
-
 #logo {
   font-family: 'Bungee', 'sans-serif';
   font-size: 32px;
@@ -50,20 +49,19 @@ button:hover {
 }
 
 /*** HOME SECTION ***/
-
-.hero-body {
+#section-home .hero-body {
   height: 800px;
   background-image: url("../assets/home-pc.jpg");
   background-size: 80%;
   background-repeat: no-repeat;
-  background-position: -250px 30px;
+  background-position: -290px 30px;
 }
 
-.hero-body .column {
+#section-home .hero-body .column {
   text-align: center;
 }
 
-.hero-div {
+.home-hero-div {
   display: inline-block;
   text-align: left;
 }
@@ -72,17 +70,17 @@ button:hover {
   margin-top: 40px;
 }
 
-.hero-div h1 {
+.home-hero-div h1 {
   font-weight: 700;
   font-size: 52px;
 }
 
-.hero-div p {
+.home-hero-div p {
   font-size: 32px;
   font-weight: 500;
 }
 
-.hero-body .columns {
+#section-home .hero-body .columns {
   margin-top: 50px;
 }
 
@@ -102,12 +100,12 @@ button:hover {
     display: block;
   }
 
-  .hero-div {
+  .home-hero-div {
     margin-top: -80px;
     text-align: center;
   }
 
-  .hero-body {
+  #section-home .hero-body {
     background-image: none;
     height: 1000px;
   }
@@ -149,7 +147,7 @@ button:hover {
   }
 }
 
-/*** PRODUCTS SECTION ***/
+/*** DETAILS SECTION ***/
 #section-brand-details {
   background: url(../assets/details-background.png);
 }
@@ -174,4 +172,113 @@ button:hover {
 
 .detail-text {
   letter-spacing: 0;
+}
+
+.desc-button {
+  display: block;
+  margin: 0px auto;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  height: 40px;
+  width: 145px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+/*** CUSTOMIZATION SECTION ***/
+#section-customize .video-bg {
+  position: absolute;
+  top: 1600px;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+#section-customize .is-6 {
+  text-align: left;
+  margin: auto 0;
+}
+
+#section-customize h1 {
+  font-weight: 700;
+  font-size: 46px;
+}
+
+#section-customize .is-6 {
+  margin: auto 0;
+}
+
+#section-customize p {
+  font-size: 28px;
+  letter-spacing: 0;
+}
+
+#section-customize img {
+  transform: scaleX(-1);
+  min-width: 480px;
+}
+
+@media (max-width: 768px) {
+  #section-customize .is-6 {
+    text-align: center;
+  }
+
+  #section-customize {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../assets/customize-bg.jpg");
+  }
+}
+
+/*** TWITCH/DISCORD SECTION ***/
+#section-twitch-discord {
+  background: url(../assets/xyfr-twitch-discord.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#section-twitch-discord .column {
+  text-align: center;
+  margin: auto;
+}
+
+#section-twitch-discord .fl-2 {
+  margin-top: 40px;
+}
+
+#section-twitch-discord p {
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  letter-spacing: 0;
+}
+
+#section-twitch-discord .container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  #discord-img {
+    margin-top: 60px;
+  }
+  .ordered-mobile {
+    display: flex;
+    flex-flow: column;
+  }
+  .ordered-mobile .fl-1 {
+    order: 1;
+  }
+  .ordered-mobile .fl-2 {
+    order: 2;
+  }
+  .ordered-mobile .fl-3 {
+    order: 3;
+  }
 }
