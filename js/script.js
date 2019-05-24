@@ -6,4 +6,13 @@ $(document).ready(function() {
       $(".navbar-menu").toggleClass("is-active");
 
   });
+
+  AOS.init();
+
+  $('.each-review').slick({
+    dots: true,
+    infinite: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  });
 });

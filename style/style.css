@@ -282,3 +282,261 @@ button:hover {
     order: 3;
   }
 }
+
+/*** REVIEWS SECTION ***/
+#section-reviews {
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: normal;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+#section-reviews #reviews-background {
+  float: right;
+}
+
+#reviews-background {
+  background-image: url('../assets/red-pc.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  height: 700px;
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+#reviews-content {
+  float: left;
+  background-color: #fff;
+  color: #fff;
+  height: inherit;
+  width: 50%;
+  position: relative;
+}
+
+#reviews-content::after {
+  border-bottom-color: #fff;
+  border-top-color: #fff;
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -120px;
+  border-bottom: 700px solid #fff;
+  border-right: 120px solid transparent;
+  height: 0;
+  width: 0;
+  z-index: 2;
+}
+
+#reviews {
+  z-index: 5;
+  padding: 20% 5%;
+  text-align: center;
+}
+
+#section-reviews h1 {
+  font-weight: 700;
+  font-size: 34px;
+}
+
+#section-reviews h2 {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+#section-reviews p {
+  font-style: italic;
+  font-size: 18px;
+  letter-spacing: 0em;
+  margin: 15px 0;
+}
+
+#section-reviews a {
+  color: black;
+  text-decoration: none;
+}
+
+.slick-slide {
+  height: 225px !important;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .reviews-background {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 768px) {
+  #section-reviews h1 {
+    font-size: 28px;
+  }
+
+  #section-reviews h2 {
+    font-size: 24px;
+  }
+
+  .slick-slide {
+    height: 270px !important;
+  }
+
+  #reviews {
+    padding: 40% 5%;
+  }
+}
+
+/*** AWARDS SECTION ***/
+#section-awards {
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: normal;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+#section-awards #awards-background {
+  float: left;
+}
+
+#awards-background {
+  background-image: url('../assets/blue-pc.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+#awards-content {
+  float: right;
+  background-color: rgb(26, 18, 36);
+  color: rgb(26, 18, 36);
+  height: inherit;
+  width: 50%;
+  position: relative;
+  text-align: center;
+}
+
+#awards-content::after {
+  border-bottom-color: rgb(26, 18, 36);
+  border-top-color: rgb(26, 18, 36);
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -120px;
+  border-bottom: 700px solid rgb(26, 18, 36);
+  border-left: 120px solid transparent;
+  height: 0;
+  width: 0;
+  z-index: 2;
+}
+
+#awards {
+  padding: 20% 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#awards h1 {
+  color: white;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+#section-awards .is-mobile {
+  display: none;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .awards-background {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 768px) { 
+  #section-awards .is-mobile {
+    display: flex;
+  }
+
+  #section-awards .desktop {
+    display: none;
+  }
+}
+
+/*** FOOTER ***/
+.footer {
+  background-color: rgb(14, 14, 14);
+}
+
+.footer .column {
+  color: white;
+}
+
+.footer .column {
+}
+
+.footer .column ul {
+  margin: 10px 0;
+}
+
+ul li {
+  list-style: none;
+  color: white;
+}
+
+.footer #logo {
+  margin: 0;
+  color: white;
+}
+
+.footer .is-mobile {
+  display: none;
+}
+
+.columns svg {
+  font-size: 30px;
+}
+
+.columns path {
+  color: white;
+}
+
+.columns a:not(:last-child) {
+  margin-right: .5em;
+}
+
+.social-links {
+  text-align: center;
+  position: relative;
+  left: 120px;
+}
+
+.social-links-mobile {
+  position: absolute;
+  bottom: 25;
+}
+
+@media (max-width: 768px) { 
+  .footer .is-mobile {
+    display: flex;
+  }
+
+  .footer .desktop {
+    display: none;
+  }
+}

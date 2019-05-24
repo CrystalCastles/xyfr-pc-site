@@ -2,15 +2,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type='text/javascript' src="js/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
     <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Bungee|Roboto:400,500,700" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <title>XYFR - Custom PCs and Cases</title>
   </head>
   <body>
+
     <!--- NAVBAR SECTION --->
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
@@ -87,7 +93,7 @@
         <div class="container">
           <div class="columns">
             <div class="column is-6 is-offset-6">
-              <div class="home-hero-div">
+              <div class="home-hero-div" data-aos="zoom-in">
                 <h1>GAMERS UNITE.</h1>
                 <p>CUSTOM CASES,</br>ACCESSORIES,</br>AND FULLY BUILT PC'S.</p>
                 <button class="learn-more-btn">LEARN MORE</button>
@@ -102,7 +108,7 @@
     <!--- PRODUCTS SECTION -->
     <section id="section-products" class="section">
       <div class="container">
-        <div class="columns">
+        <div class="columns" data-aos="fade-up" data-aos-duration="1200">
           <div class="column is-4">
             <img class="product-img" src="./assets/xyfr-case.jpg" alt="">
             <button class="product-btn">CASES</button>
@@ -122,7 +128,7 @@
     <!--- DETAILS SECTION -->
     <section id="section-brand-details" class="section">
       <div class="container">
-        <div class="columns">
+        <div class="columns" data-aos="flip-down" data-aos-duration="1000" data-aos-easing="ease-in-sine">
           <div class="column is-3">
             <img class="detail-svg" src="./assets/mouse_24px.svg" alt="">
             <h1 class="detail-header">BY GAMERS, FOR GAMERS</h1>
@@ -166,7 +172,7 @@
               </p>
               <button class="learn-more-btn">LEARN MORE</button>
             </div>
-            <div class="column">
+            <div class="column" data-aos="fade-left" data-aos-duration="700" data-aos-offset="300">
               <img src="./assets/custom-pc.png" alt="">
             </div>
           </div>
@@ -178,10 +184,10 @@
     <section id="section-twitch-discord" class="section">
       <div class="container">
         <div class="columns ordered-mobile is-multiline">
-          <div class="column is-6 fl-1">
+          <div class="column is-6 fl-1" data-aos="fade-right" data-aos-offset="500">
             <img id="twitch-img" src="./assets/twitch-seeklogo.png" alt="">
           </div>
-          <div class="column fl-3">
+          <div class="column fl-3" data-aos="fade-left" data-aos-offset="500">
             <img id="discord-img" src="./assets/discord-seeklogo.png" alt="">
           </div>
           <div class="column is-full fl-2">
@@ -191,5 +197,263 @@
         </div>
       </div>
     </section>
+
+    <!--- REVIEWS SECTION --->
+    <section id="section-reviews">
+      <div id="reviews-content">
+        <div id="reviews" data-aos="zoom-in" data-aos-offset="650">
+          <h1>WORDS FROM OUR COMMUNITY...</h1>
+          <div class="each-review">
+            <div class="review-1">
+              <h2>Extreme performance</h2>
+              <p>My PC handles everything I throw at it. From gaming
+                to video editing, it does everything I need and more...
+              </p>
+              <a href="/">READ MORE <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="review-2">
+              <h2>Great support</h2>
+              <p>I was having some troubles with building my PC but
+                XYFR's support team helped me finish the build step by step. 
+              </p>
+              <a href="/">READ MORE <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="review-3">
+              <h2>Best purchase of my life</h2>
+              <p>I was apprehensive about buying a prebuilt PC, but XYFR
+                killed it with the build. I recommended all my friends get a XYFR.
+              </p>
+              <a href="/">READ MORE <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="review-4">
+              <h2>Easy process</h2>
+              <p>Picking all the parts that I wanted was simple and easy. I was then
+                shipped the PC within a week, and I couldn't be happier.
+              </p>
+              <a href="/">READ MORE <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="review-5">
+              <h2>High quality cooler</h2>
+              <p>The cooler lowered my temps to the lowest they've ever been.
+              </p>
+              <a href="/">READ MORE <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <div id="reviews-background" data-type="background" data-speed="2" style="background-position: 0% -252.5px;"></div>
+    </section>
+
+    <!--- AWARDS SECTION --->
+    <section id="section-awards">
+      <div id="awards-content">
+        <div id="awards" data-aos="zoom-in" data-aos-offset="650">
+          <h1>AWARDS</h1>
+          <div class="columns desktop">
+            <div class="column">
+              <img src="./assets/award-cnet.png" alt="">
+            </div>
+            <div class="column">
+              <img src="./assets/award-lifehacker.png" alt="">
+            </div>
+            <div class="column">
+              <img src="./assets/award-pcgamer.png" alt="">
+            </div>
+          </div>
+          <div class="columns desktop">
+            <div class="column">
+              <img src="./assets/award-tech.png" alt="">
+            </div>
+            <div class="column">
+              <img src="./assets/award-tweek.png" alt="">
+            </div>
+            <div class="column">
+              <img src="./assets/award-perspective.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <!-- MOBILE -->
+          <div class="columns is-mobile">
+            <div class="column">
+              <img src="./assets/award-cnet.png" alt="">
+            </div>
+            <div class="column">
+              <img src="./assets/award-lifehacker.png" alt="">
+            </div>
+          </div>
+          <div class="columns is-mobile">
+            <div class="column">
+              <img src="./assets/award-pcgamer.png" alt="">
+            </div>
+            <div class="column">
+              <img src="./assets/award-perspective.png" alt="">
+            </div>
+          </div>
+          <div class="columns is-mobile">
+            <div class="column">
+              <img src="./assets/award-tech.png" alt="">
+            </div>
+            <div class="column">
+              <img src="./assets/award-tweek.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="awards-background" data-type="background" data-speed="2" style="background-position: 0% 47.5px;"></div>   
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="content">
+        <div class="container">
+          <div class="columns">
+            <div class="column desktop">
+              PRODUCTS
+              <ul>
+                <li>Cases</li>
+                <li>Custom PC's</li>
+                <li>Laptops</li>
+                <li>Accessories</li>
+              </ul>
+            </div>
+            <div class="column desktop">
+              REVIEWS
+              <ul>
+                <li>Customer Reviews</li>
+                <li>Press Reviews</li>
+                <li>Better Business Bureau</li>
+              </ul>
+            </div>
+            <div class="column desktop">
+              COMPANY
+              <ul>
+                <li>Abous Us</li>
+                <li>Contact Us</li>
+                <li>Press Releases</li>
+                <li>Careers</li>
+              </ul>
+            </div>
+            <div class="column desktop">
+              SUPPORT
+              <ul>
+                <li>Order Status</li>
+                <li>Drivers and Downloads</li>
+                <li>Technical Support</li>
+                <li>Warranty</li>
+                <li>FAQ</li>
+              </ul>
+            </div>
+            <div class="column desktop">
+              COMMUNITY
+              <ul>
+                <li>Forums</li>
+                <li>Blog</li>
+                <li>Affiliates</li>
+                <li>Twitch Channel</li>
+                <li>Discord Channel</li>
+              </ul>
+            </div>
+          </div>
+
+          <!--- MOBILE --->
+          <div class="columns is-mobile">
+            <div class="column is-6">
+              PRODUCTS
+              <ul>
+                <li>Cases</li>
+                <li>Custom PC's</li>
+                <li>Laptops</li>
+                <li>Accessories</li>
+              </ul>
+            </div>
+            <div class="column">
+              REVIEWS
+              <ul>
+                <li>Customer Reviews</li>
+                <li>Press Reviews</li>
+                <li>Better Business Bureau</li>
+              </ul>
+            </div>
+          </div>
+          <div class="columns is-mobile">
+            <div class="column is-6">
+              COMPANY
+              <ul>
+                <li>Abous Us</li>
+                <li>Contact Us</li>
+                <li>Press Releases</li>
+                <li>Careers</li>
+              </ul>
+            </div>
+            <div class="column">
+              SUPPORT
+              <ul>
+                <li>Order Status</li>
+                <li>Drivers and Downloads</li>
+                <li>Technical Support</li>
+                <li>Warranty</li>
+                <li>FAQ</li>
+              </ul>
+            </div>
+          </div>
+          <div class="columns is-mobile">
+            <div class="column is-6">
+              COMMUNITY
+              <ul>
+                <li>Forums</li>
+                <li>Blog</li>
+                <li>Affiliates</li>
+                <li>Twitch Channel</li>
+                <li>Discord Channel</li>
+              </ul>
+            </div>
+            <div class="column">
+              <h1 id="logo">XYFR</h1>
+              <div class="social-links-mobile">
+                <a href="">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-twitch"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="columns desktop">
+            <div class="column">
+              <h1 id="logo">XYFR</h1>
+            </div>
+            <div class="column social-links">
+              <a href="">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-twitch"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
